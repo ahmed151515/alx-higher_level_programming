@@ -16,9 +16,9 @@ int check_cycle(listint_t *list)
 
 	while (test != NULL)
 	{
-		test = test.next;
+		test = test->next;
 
-		if (test == head)
+		if (test == list)
 		{
 			return (1);
 		}
