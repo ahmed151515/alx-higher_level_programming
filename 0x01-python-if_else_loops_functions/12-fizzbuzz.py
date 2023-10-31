@@ -3,7 +3,7 @@ def fizzbuzz():
     for num in range(101):
         if num % 3 == 0 and num % 5 == 0:
             print("FizzBuzz", end=" ")
-        if num % 5 == 0:
+        elif num % 5 == 0:
             print("FizzBuzz", end=" ")
         elif num % 3 == 0:
             print("Fizz", end=" ")
