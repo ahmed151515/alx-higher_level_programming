@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
-def print_last_digit(number):
-    print(number % 10)
-    return number % 10
-
+def uppercase(str):
+    for char in str:
+        print("{:c}".format(ord(char) if ord(char) in
+              range(65, 91) else (ord(char) - 32)), end="")
+    print()
