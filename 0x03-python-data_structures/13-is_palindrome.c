@@ -4,7 +4,7 @@
 #include <stddef.h>
 /**
  * is_palindrome - is_palindrome
- * head: end linked list
+ * @head: end linked list
  * Return: 1 or 0
  */
 int is_palindrome(listint_t **head)
@@ -24,7 +24,7 @@ int is_palindrome(listint_t **head)
 		arr[i] = test->n;
 		test = test->next;
 	}
-	
+
 	for (count = 0; count <= i; count++)
 	{
 		if (arr[count] != arr[i])
@@ -34,6 +34,6 @@ int is_palindrome(listint_t **head)
 		i--;
 	}
 	return (1);
-	
+
 
 }
