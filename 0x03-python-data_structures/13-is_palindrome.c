@@ -1,4 +1,7 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
 /**
  * is_palindrome - is_palindrome
  * head: end linked list
