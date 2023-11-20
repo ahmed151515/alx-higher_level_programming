@@ -20,4 +20,6 @@ def list_division(my_list_1, my_list_2, list_length):
             print("out of range")
             res.append(0)
             i += 1
+        finally:
+            pass
     return res
