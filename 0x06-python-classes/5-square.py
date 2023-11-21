@@ -8,6 +8,7 @@ class Square:
     def __init__(self, size=0):
         """__init__ method"""
         self.__size = size
+
     @property
     def size(self):
         return self.__size
@@ -23,7 +24,7 @@ class Square:
     def area(self):
         """get area"""
         return self.__size ** 2
-    
+
     def my_print(self):
         if self.size == 0:
             print
