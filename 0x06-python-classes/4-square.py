@@ -7,11 +7,11 @@ class Square:
 
     def __init__(self, size=0):
         """__init__ method"""
-        self.size(size)
-
+        self.__size = size
+    @property
     def size(self):
         return self.__size
-
+    @size.setter
     def size(self, value):
         """setter method"""
         if type(value) != int:
