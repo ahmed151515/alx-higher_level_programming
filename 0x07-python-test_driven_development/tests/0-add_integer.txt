@@ -1,0 +1,31 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+Import function from module:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(1, 1)
+2
+
+>>> add_integer(1000, 1000)
+2000
+
+>>> add_integer(1)
+99
+
+>>> add_integer(1, '')
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+>>> add_integer('', 5)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer(1.5, 1)
+2

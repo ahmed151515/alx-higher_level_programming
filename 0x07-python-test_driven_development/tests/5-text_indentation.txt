@@ -1,0 +1,18 @@
+Import function from module:
+
+   >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation('my name ahmed. what your name?')
+my name ahmed.
+<BLANKLINE>
+what your name?
+<BLANKLINE>
+
+
+>>> text_indentation(51)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation('')
+
