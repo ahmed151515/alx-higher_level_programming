@@ -83,4 +83,3 @@ class Rectangle:
             _type_: _description_
         """
         return 2 * (self.__width + self.__height)
-
