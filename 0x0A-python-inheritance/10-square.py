@@ -52,6 +52,7 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         return f"[Rectangle] {self.__width}/{self.__height}"
 
+
 class Square(Rectangle):
     """_summary_
 
@@ -61,11 +62,15 @@ class Square(Rectangle):
 
     def __init__(self, size):
         self.__size = super().integer_validator("size", size)
+        super().__init__(size, size)
 
     def area(self):
         """_summary_
 
         Returns:
             _type_: _description_
-        """        
-        return self.__size ** 2
+        """
+        return super().area()
+
+    def __str__(self):
+        return super().__str__()
