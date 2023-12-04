@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """solve task"""
 
+
 def lookup(obj):
     """_summary_
 
