@@ -7,8 +7,10 @@ from sys import argv
 from load_from_json_file import load_from_json_file
 from save_to_json_file import save_to_json_file
 
-
-data = load_from_json_file("add_item.json")
+try:
+    data = load_from_json_file("add_item.json")
+except Exception:
+    data = []
 for i in list(argv[1:]):
     data.append(i)
 
