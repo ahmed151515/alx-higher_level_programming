@@ -1,17 +1,15 @@
 #!/usr/bin/python3
+"""solve task"""
+
 
 import json
 from sys import argv
 from load_from_json_file import load_from_json_file
 from save_to_json_file import save_to_json_file
 
-# Load existing data from the file or create an empty list
-    data = load_from_json_file("add_item.json")
-    data = []
 
-# Add command line arguments to the list
-data.extend(argv[1:])
+data = load_from_json_file("add_item.json")
+for i in list(argv[1:]):
+    data.append(i)
 
-# Save the updated list to the file
 save_to_json_file(data, "add_item.json")
-
