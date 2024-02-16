@@ -1,2 +1,2 @@
 #!/usr/bin/node
-console.log('My number: ' + process.argv[2]);
+console.log('My number: ' + Number(process.argv[2]));
