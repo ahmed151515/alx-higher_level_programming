@@ -11,8 +11,6 @@ if (process.argv.length < 4) {
     } else if (parseInt(process.argv[i]) > secondMax) {
       secondMax = parseInt(process.argv[i]);
     }
-
-    console.log(process.argv[i] + ' > ' + max + ' | ' + secondMax);
   }
   console.log(secondMax);
 }
