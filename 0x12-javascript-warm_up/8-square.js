@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const size = parseInt(process.argv[2]);
-if (times) {
+if (size) {
   for (let i = 0; i < size; i++) {
     console.log('x'.repeat(size));
   }
