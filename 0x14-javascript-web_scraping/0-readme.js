@@ -1,18 +1,14 @@
 #!/usr/bin/node
+// solve task
+
 const fs = require('fs');
 
-process.argv[0] = 'node';
-function readFile (filePath) {
-  fs.readFile(filePath, 'utf8', (err, data) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    console.log(data);
-  });
-}
+const file = process.argv[2];
 
-if (process.argv.length === 3) {
-  const filePath = process.argv[2];
-  readFile(filePath);
-}
+fs.readFile(file, 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(data);
+});
