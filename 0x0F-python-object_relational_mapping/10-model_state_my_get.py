@@ -13,6 +13,8 @@ if __name__ == "__main__":
         "mysql://{}:{}@localhost:3306/{}".format(argv[1], argv[2], argv[3]))
     session = sessionmaker(bind=engine)()
     res = session.query(State).order_by(
-        State.id.asc()).filter(State.name.like(f"{argv[4]}")).all()
-    for r in res:
-        print(r.id)
+        State.id.asc()).filter(State.name.like(f"{argv[4]}")).first()
+    if res:
+        print(res.id)
+    else:
+        print('Not found')
