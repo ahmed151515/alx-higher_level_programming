@@ -5,10 +5,10 @@ import sqlalchemy as db
 from sqlalchemy.ext.declarative import declarative_base
 
 
-base = declarative_base()
+Base = declarative_base()
 
 
-class State(base):
+class State(Base):
     """_summary_
 
     Args:
