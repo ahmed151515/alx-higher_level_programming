@@ -20,13 +20,3 @@ class State(base):
                    autoincrement=True, nullable=False
                    )
     name = db.Column("name", db.String(128), nullable=False)
-
-    def __init__(self, id: int, name: str):
-        """_summary_
-
-        Args:
-            id (int): _description_
-            name (str): _description_
-        """
-        self.id = id
-        self.name = name
