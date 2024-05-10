@@ -13,4 +13,7 @@ if __name__ == "__main__":
         "mysql://{}:{}@localhost:3306/{}".format(argv[1], argv[2], argv[3]))
     session = sessionmaker(bind=engine)()
     res = session.query(State).order_by(State.id.asc()).first()
-    print(f"{res.id}: {res.name}")
+    if res != None:
+        print(f"{res.id}: {res.name}")
+    else:
+        print("Nothing")
